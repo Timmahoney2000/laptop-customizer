@@ -10,7 +10,8 @@ export default function FeatureItem (props){
     const feature = props.feature;
     return (
         <div key={props.itemHash} className="feature_item">
-            <inputtype="radio"
+            <input
+            type="radio"
             id={props.itemHash}
             className="feature__option"
             name={slugify(feature)}

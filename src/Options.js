@@ -10,11 +10,12 @@ export default function Options(props) {
             return <FeatureItem itemHash={itemHash} item={item} feature={feature} selected={props.selected} updateFeature={props.updateFeature}/>;
         });
 
-        return<fieldset className="feature" key={featureHash}>
+        return (
+        <fieldset className="feature" key={featureHash}>
             <legend className="feature_name">
             </legend>
             {options}
         </fieldset>
-    );    
-});
+        );    
+    });
 }

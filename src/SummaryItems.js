@@ -7,7 +7,7 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
 
 export default function SummaryItems(props) {
     return Object.keys(props.selected).map((feature, idx) => {
-        const featureHash = feature + '-' + idx);
+        const featureHash = feature + '-' + idx;
         const selectedOption = props.selected[feature];
 
         return (
